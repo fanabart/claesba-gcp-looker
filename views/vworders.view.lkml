@@ -57,6 +57,11 @@ view: vworders {
     sql: ${TABLE}.Total ;;
   }
 
+  measure: total_qty {
+    type: sum
+    sql: ${total} ;;
+  }
+
   dimension: unit_price {
     type: number
     sql: ${TABLE}.UnitPrice ;;
