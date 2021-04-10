@@ -11,7 +11,7 @@ datagroup: claesba_gcp_demo_default_datagroup {
 persist_with: claesba_gcp_demo_default_datagroup
 
 explore: vworders {
-  label: "claesba_gcp-demo"
+  label: "test"
 
 join:  customer {
   sql_on: ${vworders.first_name} = ${customer.first_name} AND ${vworders.last_name} = ${customer.last_name}  ;;
